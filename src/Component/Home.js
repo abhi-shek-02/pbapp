@@ -6,8 +6,12 @@ import ProfileCard from './ProfileCard';
 import './Home.css'
 import { Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
+// import {useDispatchse,useSelector} from 'react-redux'
+import {fetchdata} from '../Redux/slice/apidata'
+
 
 const Home = () => {
+    // const dispatch = useDispatchse();
     const [mydata, setmydata] = useState([]);
     useEffect(() => {
         axios.get('https://reqres.in/api/users?page=1&per_page=5')
@@ -20,6 +24,7 @@ const Home = () => {
     console.log(mydata);
 
     return (
+        <>
         <div className="cont-news">
             <div className="news-box">
                 {
@@ -39,8 +44,9 @@ const Home = () => {
                     })
                 }
             </div>
-
         </div>
+                <button>Show profiles</button>
+        </>
     )
 }
 
