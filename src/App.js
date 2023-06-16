@@ -5,9 +5,11 @@ import Home from '../src/Component/Home'
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-        <Home />
-      </BrowserRouter>,
+      <React.StrictMode>
+        {/* <BrowserRouter> */}
+          <Home />
+        {/* </BrowserRouter>, */}
+      </React.StrictMode>
     </div>
   )
 }
