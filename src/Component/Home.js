@@ -7,12 +7,16 @@ import './Home.css'
 import { Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 // import {useDispatchse,useSelector} from 'react-redux'
-import {fetchdata} from '../Redux/slice/apidata'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchdata } from '../Redux/slice/apidata'
 
 
 const Home = () => {
-    // const dispatch = useDispatchse();
+    const dispatch = useDispatch();
+    const state = useSelector((state) => state);
+    // console.log("state", state);
     const [mydata, setmydata] = useState([]);
+    const [myreduxdata, setmyreduxdata] = useState([]);
     useEffect(() => {
         axios.get('https://reqres.in/api/users?page=1&per_page=5')
             .then((response) => {
@@ -21,31 +25,39 @@ const Home = () => {
                 console.error(error);
             });
     }, []);
-    console.log(mydata);
+
+    if (state.Allapidata.isLoading == true) {
+        return <h1>Loading...</h1>
+    }
+    else {
+       
+    }
+
 
     return (
         <>
-        <div className="cont-news">
-            <div className="news-box">
-                {
-                    mydata?.map((item, i) => {
-                        console.log(item.id)
-                        return (
-                            <Link to={`/profile/${i}`} key={i}>
-                                <ProfileCard
-                                    last_name={item.last_name}
-                                    first_name={item.first_name}
-                                    email={item.email}
-                                    avatar={item?.avatar}
-                                />
-                            </Link>
+            <div className="cont-news">
+                <div className="news-box">
+                    {
+                        mydata?.map((item, i) => {
+                            {/* console.log(item.id) */ }
+                            return (
+                                <Link to={`/profile/${i}`} key={i}>
+                                    <ProfileCard
+                                        last_name={item.last_name}
+                                        first_name={item.first_name}
+                                        email={item.email}
+                                        avatar={item?.avatar}
+                                    />
+                                </Link>
 
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
-        </div>
-                <button>Show profiles</button>
+            <button className="btn" onClick={e => dispatch(fetchdata())}>Show profiles</button>
+
         </>
     )
 }
