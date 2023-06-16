@@ -6,7 +6,6 @@ import ProfileCard from './ProfileCard';
 import './Home.css'
 import { Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
-import {Switch} from 'react-router-dom';
 
 const Home = () => {
     const [mydata, setmydata] = useState([]);
