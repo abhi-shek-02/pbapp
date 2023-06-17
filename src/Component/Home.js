@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 // import {useDispatchse,useSelector} from 'react-redux'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchdata } from '../Redux/slice/apidata'
-
+import Newfile from './Newfile';
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -26,44 +26,45 @@ const Home = () => {
             });
     }, []);
 
-    if (state.Allapidata.isLoading == true) {
-        return <h1>Loading...</h1>
-    }
-    else{
+    // if (state.Allapidata.isLoading === true) {
+    //     return <h1>Loading...</h1>
+    // }
+    // else{
         
-    }
-    // console.log(state.Allapidata.data.data);
+        // }
+            // console.log(state.Allapidata);
 
 
     return (
         <>
-            <div className="cont-news">
-                <div className="news-box">
-                    {
-                        mydata?.map((item, i) => {
-                            {/* console.log(item.id) */ }
-                            return (
-                                <Link to={`/profile/${i}`} key={i}>
-                                    <ProfileCard
-                                        last_name={item.last_name}
-                                        first_name={item.first_name}
-                                        email={item.email}
-                                        avatar={item?.avatar}
-                                    />
-                                </Link>
-
-                            )
-                        })
-                    }
-                </div>
-            </div>
-            <button className="btn" onClick={e => dispatch(fetchdata())}>Show profiles</button>
-
+            
+                   <div> <Newfile/></div>
         </>
     )
 }
 
 export default Home
 
+            {/* <button className="btn" onClick={e => dispatch(fetchdata())}>Show profiles</button> */}
 
 
+// <div className="cont-news">
+//                 <div className="news-box">
+//                     {
+//                         mydata?.map((item, i) => {
+//                             {/* console.log(item.id) */ }
+//                             return (
+//                                 <Link to={`/profile/${i}`} key={i}>
+//                                     <ProfileCard
+//                                         last_name={item.last_name}
+//                                         first_name={item.first_name}
+//                                         email={item.email}
+//                                         avatar={item?.avatar}
+//                                     />
+//                                 </Link>
+
+//                             )
+//                         })
+//                     }
+//                 </div>
+//             </div>
