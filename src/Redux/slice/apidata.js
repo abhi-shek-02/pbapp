@@ -6,11 +6,6 @@ export const fetchdata = createAsyncThunk('fetchdata', () => {
         .get('https://reqres.in/api/users?page=1&per_page=5')
         .then((response) => response.data)
 });
-// export const fetchdata = createAsyncThunk('fetchdata', async()=>{
-//     const response = await fetch('https://reqres.in/api/users?page=1&per_page=5')
-//     return response.json();
-// });
-
 const apidataSlice = createSlice({
     name: "Allapidata",
     initialState: {

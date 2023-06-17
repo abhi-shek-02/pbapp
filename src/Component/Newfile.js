@@ -12,7 +12,7 @@ const Newfile = () => {
         dispatch(fetchdata())
         setmydata(user.data)
     }, [])
-    console.log("X",user.data)
+    console.log("data",user.data)
     
 
     return (
@@ -49,9 +49,6 @@ const Newfile = () => {
 
 export default Newfile
 
-
-
-{/* console.log("data", user.data) */ }
 
 
 
