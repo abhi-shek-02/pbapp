@@ -29,9 +29,10 @@ const Home = () => {
     if (state.Allapidata.isLoading == true) {
         return <h1>Loading...</h1>
     }
-    else {
-       
+    else{
+        
     }
+    // console.log(state.Allapidata.data.data);
 
 
     return (
