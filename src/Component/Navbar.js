@@ -3,14 +3,7 @@ import './Navbar.css'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
 
-    // <div className="nav-bar">
-    //     <NavLink exact to="/" className="nav-logo">
-    //         CodeBucks
-    //         <i className="fa fa-code"></i>
-    //     </NavLink>
-    //     <ul className={click ? "nav-menu active" : "nav-menu"}>
-
-    // </div>
+ 
     const [click, setClick] = React.useState(false);
 
     const handleClick = () => setClick(!click);
@@ -22,7 +15,7 @@ const Navbar = () => {
             <nav className="navbar" onClick={e => e.stopPropagation()}>
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
-                        CodeBucks
+                        LiveSpace
                         <i className="fa fa-code"></i>
                     </NavLink>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
