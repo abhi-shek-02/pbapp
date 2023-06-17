@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&family=Baloo+Tamma+2:wght@500&family=Nunito+Sans:ital,wght@0,300;0,600;1,800&family=Nunito:wght@300;400&family=Poppins:wght@100&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
     height: 70px;
     background-color: #1369ce;
     position:fixed;
+
 
 }
 
@@ -38,6 +40,8 @@
       rgba(73, 121, 199, 0.7)
     ),  url("https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?w=940&h=650&auto=compress");
   background-size: cover;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   }
   
   .nav-container {

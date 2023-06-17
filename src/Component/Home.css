@@ -3,12 +3,16 @@
     align-items: center;
     justify-content:center;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&family=Baloo+Tamma+2:wght@500&family=Nunito+Sans:ital,wght@0,300;0,600;1,800&family=Nunito:wght@300;400&family=Poppins:wght@100&display=swap');
+
 .cont-news{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     
 
 }
@@ -18,6 +22,10 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .heading{
     display: flex;
@@ -27,6 +35,8 @@
     margin-top: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .line{
     display: flex;

@@ -3,7 +3,7 @@ import './Navbar.css'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
 
- 
+
     const [click, setClick] = React.useState(false);
 
     const handleClick = () => setClick(!click);
@@ -23,9 +23,7 @@ const Navbar = () => {
                             <NavLink
                                 exact
                                 to="/"
-                                activeClassName="active"
                                 className="nav-links"
-                                onClick={click ? handleClick : null}
                             >
                                 Home
                             </NavLink>
@@ -33,10 +31,7 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/about"
-                                activeClassName="active"
                                 className="nav-links"
-                                onClick={click ? handleClick : null}
                             >
                                 About
                             </NavLink>
@@ -44,10 +39,7 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/blog"
-                                activeClassName="active"
                                 className="nav-links"
-                                onClick={click ? handleClick : null}
                             >
                                 Blog
                             </NavLink>
@@ -55,10 +47,7 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/contact"
-                                activeClassName="active"
                                 className="nav-links"
-                                onClick={click ? handleClick : null}
                             >
                                 Contact Us
                             </NavLink>
@@ -69,7 +58,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </ div>
+        </div>
     );
 }
 

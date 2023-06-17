@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchdata } from '../Redux/slice/apidata'
 import ProfileCard from './ProfileCard'
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 
 const Newfile = () => {
     const [mydata, setmydata] = useState([])
@@ -12,8 +13,8 @@ const Newfile = () => {
         dispatch(fetchdata())
         setmydata(user.data)
     }, [])
-    console.log("data",user.data)
-    
+    console.log("data", user.data)
+
 
     return (
         <div>
@@ -27,13 +28,17 @@ const Newfile = () => {
                         <div className="news-box">
                             {
                                 user?.data?.data?.map((item, i) => {
+                                    {/* console.log(item) */}
                                     return (
-                                        <ProfileCard
-                                            last_name={item.last_name}
-                                            first_name={item.first_name}
-                                            email={item.email}
-                                            avatar={item?.avatar}
-                                        />
+                                        <Link to={`/profile/${i}`} key={i} state={item}>
+                                        
+                                            <ProfileCard
+                                                last_name={item.last_name}
+                                                first_name={item.first_name}
+                                                email={item.email}
+                                                avatar={item?.avatar}
+                                            />
+                                        </Link>
 
                                     )
                                 })

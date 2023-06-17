@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&family=Baloo+Tamma+2:wght@500&family=Nunito+Sans:ital,wght@0,300;0,600;1,800&family=Nunito:wght@300;400&family=Poppins:wght@100&display=swap');
+  .main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    border: 2px soild rgb(255, 0, 0);
+    font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+  }
+  .main-card{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    height:300px;
+    width: 50%;
+    /* border: 2px soild rgb(0, 0, 0); */
+  }
+  .main-card1{
+    width: 40%;
+    background: #f6d365;
+    /* background-color:rgb(255, 255, 255); */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    height: 100%;
+      /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+  display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+
+  }
+  .main-card1 img{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    border-radius: 50px;
+    /* font-size: 200px; */
+    height: 50%;
+    width: 50%;
+  }
+  .main-card2{
+    background-color: black;
+    width: 60%;
+    height: 100%;
+    background: #000000;
+    /* background-color:rgb(255, 255, 255); */
+ 
+  background: #ffffff;
+
+  display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+  }
+  .main-card2-1{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+  .main-card2-2{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+  .main-card2-2 li{
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+
+ 
+
+/* CSS */
+.button-63 {
+  margin-top: 50px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 10px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 15px 15px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
